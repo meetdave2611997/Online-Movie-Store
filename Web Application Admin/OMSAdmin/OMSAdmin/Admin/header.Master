@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="header.master.cs" Inherits="OMSAdmin.Admin.header" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <center>
+        <h1 >Online Movie Store Admin Panel</h1>
+    </center>
+    <form id="form1" runat="server">
+        <h3>Welcome, <asp:Label ID="usernameLabel" runat="server"></asp:Label></h3>
+        
+        <asp:HyperLink ID="orderlink" Text="Orders" runat="server" NavigateUrl="~/Admin/orders.aspx"></asp:HyperLink>
+        <asp:LinkButton ID="logout_button" Text="Logout" OnClick="logout_button_Click" runat="server"></asp:LinkButton>
+        <hr />
+        <asp:ContentPlaceHolder ID="contentplaceholder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
