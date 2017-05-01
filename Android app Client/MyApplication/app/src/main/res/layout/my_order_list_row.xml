@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/orderID"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="Cancel Order"
+            android:id="@+id/cancelOrderButton"
+            android:layout_below="@+id/movieImage_order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="100dp"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/movieImage_order"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/movieName_order"
+        android:layout_alignTop="@+id/movieImage_order"
+        android:layout_toEndOf="@+id/movieImage_order"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/moviePrice_order"
+        android:layout_below="@+id/movieName_order"
+        android:layout_toEndOf="@+id/movieImage_order"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/movieQty_order"
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/moviePrice_order"
+        android:layout_toEndOf="@+id/moviePrice_order" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/orderDate"
+        android:layout_below="@+id/moviePrice_order"
+        android:layout_alignStart="@+id/moviePrice_order"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/orderStatus"
+        android:layout_below="@+id/orderDate"
+        android:layout_alignStart="@+id/orderDate"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp" />
+
+</RelativeLayout>

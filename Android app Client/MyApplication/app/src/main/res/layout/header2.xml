@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/homeButton"
+        android:background="@android:color/transparent"
+        android:onClick="homeButtonClick"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/myAccountDropDown" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartButton"
+        android:src="@mipmap/cart_image"
+        android:background="@android:color/transparent"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_above="@+id/searchView"
+        android:layout_alignParentEnd="true"
+        android:onClick="cartClick" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_below="@+id/homeButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="fill"
+        android:background="#ffffff" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/myAccountDropDown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/searchView"
+        android:layout_toStartOf="@+id/cartButton"
+        android:entries="@array/myAccountDropDownValues"
+        />
+
+
+</RelativeLayout>
